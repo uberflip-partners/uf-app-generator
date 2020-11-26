@@ -1,0 +1,23 @@
+{
+  "name": "uf-app-generator",
+  "version": "1.0.0",
+  "description": "This NPM package can generate the Uberflip Marketplace app file structure and seamlessly push local changes to your app during the app development process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uberflip-partners/uf-app-generator.git"
+  },
+  "author": "Larsen Friis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uberflip-partners/uf-app-generator/issues"
+  },
+  "homepage": "https://github.com/uberflip-partners/uf-app-generator#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "simple-tree-watcher": "^0.3.0"
+  }
+}
