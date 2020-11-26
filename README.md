@@ -1,6 +1,6 @@
-# uf-app-generator
+# # <img src="https://github.com/uberflip-partners/uf-app-generator/blob/master/images/logo.png" height="40"> uf-app-generator
 
-<img src="https://github.com/uberflip-partners/uf-app-generator/blob/master/uf-app-generator.png">
+<img src="https://github.com/uberflip-partners/uf-app-generator/blob/master/images/uf-app-generator.png">
 
 ### Installing
 
