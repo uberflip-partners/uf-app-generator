@@ -32,8 +32,24 @@ $ Enter App Name?
 $ >test-App
 
 $ 'test-App' app directory created!
+$ Asset directory created...
 $ Manifest populated...
+$ Script directory created...
 $ Script files populated...
+
+$ Do you want to commit to a GitHub repo? (Y/N)
+>y
+
+$ Enter git repository URL for initial commit
+>https://github.com/lfriis/test.git
+
+.
+.
+...'git stuff'...
+.
+.
+
+$ Happy developing (<>..<>)
 ```
 
 #### `buildDir` File Structure

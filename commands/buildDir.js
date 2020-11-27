@@ -50,8 +50,6 @@ rl.question('\nEnter App Name?\n>', (appName) => {
 
                     rl.question('\nDo you want to commit to a GitHub repo? (Y/N)\n>', (gitAnswer) => {
 
-                        console.log(gitAnswer);
-
                         if (gitAnswer === 'Y' || gitAnswer === 'y') {
                             rl.question('\nEnter git repository URL for initial commit\n>', (gitURL) => {
     
