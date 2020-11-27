@@ -1,13 +1,13 @@
-                     __                ___ __ __
-              .--.--|  |--.-----.----.'  _|  |__.-----.
-              |  |  |  _  |  -__|   _|   _|  |  |  _  |
-              |_____|_____|_____|__| |__| |__|__|   __|
-                                                |__|
-                                                           __
- .---.-.-----.-----.    .-----.-----.-----.-----.----.---.-|  |_.-----.----.
- |  _  |  _  |  _  |    |  _  |  -__|     |  -__|   _|  _  |   _|  _  |   _|
- |___._|   __|   __|    |___  |_____|__|__|_____|__| |___._|____|_____|__|
-       |__|  |__|       |_____|
+                        __                ___ __ __
+                 .--.--|  |--.-----.----.'  _|  |__.-----.
+                 |  |  |  _  |  -__|   _|   _|  |  |  _  |
+                 |_____|_____|_____|__| |__| |__|__|   __|
+                                                   |__|
+                                                             __
+    .---.-.-----.-----.  .-----.-----.-----.-----.----.---.-|  |_.-----.----.
+    |  _  |  _  |  _  |  |  _  |  -__|     |  -__|   _|  _  |   _|  _  |   _|
+    |___._|   __|   __|  |___  |_____|__|__|_____|__| |___._|____|_____|__|
+          |__|  |__|     |_____|
 
 ### Installing
 
@@ -22,7 +22,7 @@ $ npm i uf-app-generator
 
 This command generates a folder structure and auto-populates this directory with:
 - Sample `manifest.json` with examples of every input available in the Marketplace
-- `Scripts Directory` that contains `.JS` files each Hub version
+- `Scripts Directory` that contains a `.JS` file to drop each Hub code version
 - `Image Directory` to store all assets
 
 ```
@@ -47,8 +47,6 @@ The following file structure will be generated in your local directory from the 
 │   ├── assets
 ├── scripts
 │   ├── themesCheck.js
-│   ├── Tv1-version.js
-│   ├── Tv2-version.js
 ```
 
 ### `pushDir`
