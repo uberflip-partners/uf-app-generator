@@ -1,6 +1,16 @@
 # <img src="https://github.com/uberflip-partners/uf-app-generator/blob/master/images/logo.png" height="40"> uf-app-generator
 
-<img src="https://github.com/uberflip-partners/uf-app-generator/blob/master/images/uf-app-generator.png">
+
+                        __                ___ __ __
+                 .--.--|  |--.-----.----.'  _|  |__.-----.
+                 |  |  |  _  |  -__|   _|   _|  |  |  _  |
+                 |_____|_____|_____|__| |__| |__|__|   __|
+                                                   |__|
+                                                              __
+    .---.-.-----.-----.    .-----.-----.-----.-----.----.---.-|  |_.-----.----.
+    |  _  |  _  |  _  |    |  _  |  -__|     |  -__|   _|  _  |   _|  _  |   _|
+    |___._|   __|   __|    |___  |_____|__|__|_____|__| |___._|____|_____|__|
+          |__|  |__|       |_____|
 
 ### Installing
 
