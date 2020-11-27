@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const
+    SimpleTreeWatcher = require('simple-tree-watcher');
     readline = require('readline');
     dir = process.env.PWD;
     watcher = new SimpleTreeWatcher(dir);
@@ -34,4 +35,4 @@ rl.question('\nEnter marketplace app ID\n>', (appId) => {
             console.log('Changes pushed!'); 
         });
     });
-}); 
+});

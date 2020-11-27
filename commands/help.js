@@ -29,9 +29,9 @@ const
 
     console.log('', dim);
     console.log(bold, '\nCommands:\n');
-    console.log('   buildDir     generate folder structure and auto-populate with sample');  
-    console.log('   push         pushes local changes to app\n');
+    console.log('   buildDir        generate folder structure and auto-populate with sample');  
+    console.log('   pushDir         pushes local changes in current directory to Marketplace app\n');
 
     console.log('Options:\n'); 
-    console.log('   --version    Show version number');
-    console.log('   --help       Show help options\n', reset);
+    console.log('   --uf-version    Show version number');
+    console.log('   --uf-help       Show help options\n', reset);

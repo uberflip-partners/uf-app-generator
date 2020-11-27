@@ -1,13 +1,13 @@
-                        __                ___ __ __
-                 .--.--|  |--.-----.----.'  _|  |__.-----.
-                 |  |  |  _  |  -__|   _|   _|  |  |  _  |
-                 |_____|_____|_____|__| |__| |__|__|   __|
-                                                   |__|
-                                                              __
-    .---.-.-----.-----.    .-----.-----.-----.-----.----.---.-|  |_.-----.----.
-    |  _  |  _  |  _  |    |  _  |  -__|     |  -__|   _|  _  |   _|  _  |   _|
-    |___._|   __|   __|    |___  |_____|__|__|_____|__| |___._|____|_____|__|
-          |__|  |__|       |_____|
+                     __                ___ __ __
+              .--.--|  |--.-----.----.'  _|  |__.-----.
+              |  |  |  _  |  -__|   _|   _|  |  |  _  |
+              |_____|_____|_____|__| |__| |__|__|   __|
+                                                |__|
+                                                           __
+ .---.-.-----.-----.    .-----.-----.-----.-----.----.---.-|  |_.-----.----.
+ |  _  |  _  |  _  |    |  _  |  -__|     |  -__|   _|  _  |   _|  _  |   _|
+ |___._|   __|   __|    |___  |_____|__|__|_____|__| |___._|____|_____|__|
+       |__|  |__|       |_____|
 
 ### Installing
 
@@ -51,9 +51,9 @@ The following file structure will be generated in your local directory from the 
 │   ├── Tv2-version.js
 ```
 
-### `push`
+### `pushDir`
 
-This command looks for local changes and seamlessly pushes changes to app.
+This command looks for local changes in current directory and seamlessly pushes changes to the Marketplace app.
 
 ```
 $ Enter marketplace app ID
@@ -70,10 +70,10 @@ $ Looking for changes:  /Users/friisl/Documents/uf-app-generator-test
 $ Changes pushed!
 ```
 
-### `--version`
+### `--uf-version`
 
 Outputs current version of `uf-app-generator` package.
 
-### `--help`
+### `--uf-help`
 
 Outputs detailed information about available [commands](#commands) and developer contact information.
