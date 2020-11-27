@@ -22,16 +22,16 @@ const
     console.log('', `         |__|  |__|       |_____|                                              `);
 
     console.log('\n\n    Developer: Larsen Friis');
-    console.log('    Contact @ larsen.friis@uberflip.com');
+    console.log('    Contact with any issues @ larsen.friis@uberflip.com');
 
     console.log('\n\n    This package can generate the Uberflip Marketplace app file structure and');
     console.log('    seamlessly push local changes to your app during the app development process.');
 
     console.log('', dim);
     console.log(bold, '\nCommands:\n');
-    console.log('   buildDir  generate folder structure and auto-populate with sample');  
-    console.log('   push      pushes local changes to app\n');
+    console.log('   buildDir     generate folder structure and auto-populate with sample');  
+    console.log('   push         pushes local changes to app\n');
 
     console.log('Options:\n'); 
-    console.log('   --version  Show version number');
-    console.log('   --help     Show help options\n', reset);
+    console.log('   --version    Show version number');
+    console.log('   --help       Show help options\n', reset);
