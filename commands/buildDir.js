@@ -60,6 +60,7 @@ rl.question('\nEnter App Name?\n>', (appName) => {
                                     if (err) throw err;
                                 });
     
+                                console.log('', reset);
                                 shell.exec("git init");
                                 shell.exec("git add .");
                                 shell.exec("git commit -m 'Initial commit'");
