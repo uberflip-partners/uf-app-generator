@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<img src="https://github.com/uberflip-partners/uf-app-generator/blob/master/images/logo.png" height="40">
-
->>>>>>> 2a15b9938bcc79b80806b6461ab6ed73708fcef2
                         __                ___ __ __
                  .--.--|  |--.-----.----.'  _|  |__.-----.
                  |  |  |  _  |  -__|   _|   _|  |  |  _  |
