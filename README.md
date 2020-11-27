@@ -26,22 +26,22 @@ This command generates a folder structure and auto-populates this directory with
 - `Image Directory` to store all assets
 
 ```
-$   buildDir
+$  buildDir
 
-$   Enter App Name?
-$   >test-App
+$  Enter App Name?
+$  >test-App
 
-$   'test-App' app directory created!
-$   Asset directory created...
-$   Manifest populated...
-$   Script directory created...
-$   Script files populated...
+$  'test-App' app directory created!
+$  Asset directory created...
+$  Manifest populated...
+$  Script directory created...
+$  Script files populated...
 
-$   Do you want to commit to a GitHub repo? (Y/N)
-$   >y
+$  Do you want to commit to a GitHub repo? (Y/N)
+$  >y
 
-$   Enter git repository URL for initial commit
-$   >https://github.com/lfriis/test.git
+$  Enter git repository URL for initial commit
+$  >https://github.com/lfriis/test.git
 
 .
 ...git stuff...
@@ -69,18 +69,18 @@ The following file structure will be generated in your local directory from the 
 This command looks for local changes in current directory and seamlessly pushes changes to the Marketplace app.
 
 ```
-$   Enter marketplace app ID
-$   >123456
+$  Enter marketplace app ID
+$  >123456
 
-$   App Version
-$   >v1
+$  App Version
+$  >v1
 
-$   -- APP CONFIG --
-$   ID:      123456
-$   Version: v1
+$  -- APP CONFIG --
+$  ID:      123456
+$  Version: v1
 
-$   Looking for changes:  /Users/friisl/Documents/uf-app-generator-test
-$   Changes pushed!
+$  Looking for changes: /Users/friisl/Documents/uf-app-generator-test
+$  Changes pushed!
 ```
 
 ### `--uf-version`
