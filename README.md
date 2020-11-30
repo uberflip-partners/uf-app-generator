@@ -9,6 +9,8 @@
     |___._|   __|   __|  |___  |_____|__|__|_____|__| |___._|____|_____|__|
           |__|  |__|     |_____|
 
+## This package can generate the Uberflip Marketplace app file structure and seamlessly push local changes to your app during the app development process.
+
 ### Installing
 
 Using npm:
