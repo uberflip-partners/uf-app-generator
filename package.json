@@ -14,10 +14,10 @@
   "author": "Larsen Friis",
   "license": "ISC",
   "bin": {
-    "buildDir": "./commands/buildDir.js",
-    "pushDir": "./commands/push.js",
-    "--uf-version": "./commands/version.js",
-    "--uf-help": "./commands/help.js"
+    "buildDir": "commands/buildDir.js",
+    "pushDir": "commands/push.js",
+    "--uf-version": "commands/version.js",
+    "--uf-help": "commands/help.js"
   },
   "bugs": {
     "url": "https://github.com/uberflip-partners/uf-app-generator/issues"
@@ -25,6 +25,8 @@
   "homepage": "https://github.com/uberflip-partners/uf-app-generator#readme",
   "dependencies": {
     "axios": "^0.21.0",
+    "minify": "^6.0.1",
+    "replace-in-file": "^6.1.0",
     "shelljs": "^0.8.4",
     "simple-tree-watcher": "^0.3.0"
   }

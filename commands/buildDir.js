@@ -21,7 +21,7 @@ console.log('\n');
 console.log('\x1b[45m','Uberflip App Generator', reset);
 
 console.log(' ', yellow);
-rl.question('\nEnter App Name?\n>', (appName) => {
+rl.question('\nEnter App Name?\n> ', (appName) => {
     fs.mkdir(`./${appName}`, { recursive: true }, function(err) {
         if (err) throw err;
         else {
@@ -43,15 +43,15 @@ rl.question('\nEnter App Name?\n>', (appName) => {
             // Creating script folder and populating files
             fs.mkdir(`./${appName}/scripts`, function (err) {
                 if (err) throw err;
-                fs.writeFile(`./${appName}/scripts/themesCheck.js`, content.themesCheck, function (err) {
+                fs.writeFile(`./${appName}/scripts/contents.js`, content.themesCheck, function (err) {
                     if (err) throw err;
                     console.log('Script directory created...');
                     console.log('Script files populated...', yellow);
 
-                    rl.question('\nDo you want to commit to a GitHub repo? (Y/N)\n>', (gitAnswer) => {
+                    rl.question('\nDo you want to commit to a GitHub repo? (Y/N)\n> ', (gitAnswer) => {
 
                         if (gitAnswer === 'Y' || gitAnswer === 'y') {
-                            rl.question('\nEnter git repository URL for initial commit\n>', (gitURL) => {
+                            rl.question('\nEnter git repository URL for initial commit\n> ', (gitURL) => {
     
                                 console.log('', cyan);
                                 fs.writeFile(`./${appName}/README.md`, content.README, function (err) {
