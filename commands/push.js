@@ -16,45 +16,41 @@ const
         input: process.stdin,
         output: process.stdout
     });
-    
-    console.log('\n');
-    console.log('\x1b[45m','Uberflip App Generator', reset);
+let i = 0;
 
-    console.log('', yellow);
-    rl.question('Enter marketplace app ID\n> ', (appId) => {
+console.log('\n');
+console.log('\x1b[45m','Uberflip App Generator', reset);
 
-        rl.question('\nApp Version\n> ', (appVersion) => {
-            console.log(' ', reset);
-            console.log('\x1b[45m', '-- APP CONFIG --', reset);
-            console.log('ID:      ' + appId);
-            console.log('Version: ' + appVersion, reset);                
+console.log('', yellow);
+rl.question('Enter marketplace app ID\n> ', (appId) => {
 
-            console.log('', cyan);
-            console.log('Looking for changes in current directory:', dir, green);
+    rl.question('\nApp Version\n> ', (appVersion) => {
+        console.log(' ', reset);
+        console.log('\x1b[45m', '-- APP CONFIG --', reset);
+        console.log('ID:      ' + appId);
+        console.log('Version: ' + appVersion, reset);                
 
-            watcher.on('change', function(f, s) {
+        console.log('', cyan);
+        console.log('Looking for changes in current directory:', dir, green);
 
-                minify('./scripts/contents.js')
-                    .then(res => 
-                    {
-                        let temp = res.replace(/"/g, "'");
-                        let contents = '"content:" <script>' + temp + '</script>",';
+        watcher.on('change', function(f, s) {
 
-                        const options = {
-                            files: './manifest.json',
-                            from: '"content: "<script>"',
-                            to: '</script>',
-                        };
+            minify('./scripts/app.js')
+            .then(res => 
+            {
+                let temp = res.replace('"', "'");
+                let code = '"<script>' + temp + '</script>",';
 
-                        replaceFile(options)
-                            .then(res => {
-                                console.log(res);
-                            })
-                            .catch(e => {
-                                console.error('Error occurred:', e);
-                            });
-                    })
-                    .catch(console.error);
+                let result = replaceFile.sync({
+                    files: dir + '/manifest.json',
+                    from: new RegExp('\<(?:[^:]+:)?script\>.*?\<\/(?:[^:]+:)?script\>'),
+                    to: code,
+                    countMatches: true
+                });
+                i++;
+
+                console.log(`[${i}] Changes (${result[0].numMatches}) pushed!\n`);
             });
         });
+    });
 });

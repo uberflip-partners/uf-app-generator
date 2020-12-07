@@ -43,7 +43,7 @@ rl.question('\nEnter App Name?\n> ', (appName) => {
             // Creating script folder and populating files
             fs.mkdir(`./${appName}/scripts`, function (err) {
                 if (err) throw err;
-                fs.writeFile(`./${appName}/scripts/contents.js`, content.themesCheck, function (err) {
+                fs.writeFile(`./${appName}/scripts/app.js`, content.themesCheck, function (err) {
                     if (err) throw err;
                     console.log('Script directory created...');
                     console.log('Script files populated...', yellow);
