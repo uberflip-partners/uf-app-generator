@@ -1,5 +1,5 @@
 {
-  "name": "@uberflip-partners/uf-app-generator",
+  "name": "uf-app-generator",
   "version": "1.0.6",
   "description": "This NPM package can generate the Uberflip Marketplace app file structure and seamlessly push local changes to your app during the app development process.",
   "main": "./commands/help.js",
