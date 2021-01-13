@@ -30,16 +30,17 @@ This command generates a folder structure and auto-populates this directory with
 ```
 $  buildDir
 
-$  Enter App Name?
-$  >test-App
+$  ❕ Enter App Name?
+$  > test-App
 
-$  'test-App' app directory created!
-$  Asset directory created...
-$  Manifest populated...
-$  Script directory created...
-$  Script files populated...
+$  📁 'test-App' directory created!
 
-$  Do you want to commit to a GitHub repo? (Y/N)
+$  📁 test-App/images folder created...
+$  📄 Manifest populated...
+$  📁 test-App/scripts folder created...
+$  📄 Script files populated...
+
+$  ❕ Do you want to commit to a GitHub repo? (Y/N)
 $  >y
 
 $  Enter git repository URL for initial commit
@@ -49,13 +50,12 @@ $  >https://github.com/lfriis/test.git
 ...git stuff...
 .
 
-
-$   Happy developing (<>..<>)
+$   Happy developing 🚀
 ```
 
-#### `buildDir` File Structure
+#### `buildDir`
 
-The following file structure will be generated in your local directory from the `buildDir` command.
+The following folder structure will be generated in your local directory from the `buildDir` command.
 
 ```
 .
@@ -63,7 +63,7 @@ The following file structure will be generated in your local directory from the 
 ├── images
 │   ├── assets
 ├── scripts
-│   ├── themesCheck.js
+│   ├── app.js
 ```
 
 ### `pushDir`
@@ -71,17 +71,17 @@ The following file structure will be generated in your local directory from the 
 This command looks for local changes in current directory and seamlessly pushes changes to the Marketplace app.
 
 ```
-$  Enter marketplace app ID
+$  ❕ Enter marketplace app ID
 $  >123456
 
-$  App Version
+$  ❕ App Version
 $  >v1
 
-$  -- APP CONFIG --
+$  🔧  APP CONFIG  🔧
 $  ID:      123456
 $  Version: v1
 
-$  Looking for changes: /Users/friisl/Documents/uf-app-generator-test
+$  Looking for changes in: 📂 /Users/friisl/Documents/uf-app-generator-test
 $  Changes pushed!
 ```
 
@@ -91,4 +91,4 @@ Outputs current version of `uf-app-generator` package.
 
 ### `--uf-help`
 
-Outputs detailed information about available [commands](#commands) and developer contact information.
+Outputs detailed information about available [commands](#commands) and how to contact the developer.

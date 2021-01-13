@@ -22,35 +22,40 @@ console.log('\n');
 console.log('\x1b[45m','Uberflip App Generator', reset);
 
 console.log('', yellow);
-rl.question('Enter marketplace app ID\n> ', (appId) => {
+rl.question('❕ Enter marketplace app ID\n> ', (appId) => {
 
-    rl.question('\nApp Version\n> ', (appVersion) => {
+    rl.question('\n❕ App Version\n> ', (appVersion) => {
         console.log(' ', reset);
-        console.log('\x1b[45m', '-- APP CONFIG --', reset);
+        console.log('\x1b[45m', '🔧  APP CONFIG  🔧', reset);
         console.log('ID:      ' + appId);
         console.log('Version: ' + appVersion, reset);                
 
         console.log('', cyan);
-        console.log('Looking for changes in current directory:', dir, green);
+        console.log('Looking for changes in: 📂', dir, green);
+
+        let once = false;
 
         watcher.on('change', function(f, s) {
 
-            minify('./scripts/app.js')
-            .then(res => 
-            {
-                let temp = res.replace('"', "'");
-                let code = '"<script>' + temp + '</script>",';
+            if (!once) {   
+                minify('./scripts/app.js')
+                .then(res => 
+                {
+                    let temp = res.replaceAll('"', "'");
+                    let code = '<script>' + temp + '</script>';
 
-                let result = replaceFile.sync({
-                    files: dir + '/manifest.json',
-                    from: new RegExp('\<(?:[^:]+:)?script\>.*?\<\/(?:[^:]+:)?script\>'),
-                    to: code,
-                    countMatches: true
+                    let result = replaceFile.sync({
+                        files: dir + '/manifest.json',
+                        from: new RegExp('\<(?:[^:]+:)?script\>.*?\<\/(?:[^:]+:)?script\>'),
+                        to: code,
+                        countMatches: true
+                    });
+                    i++;
+
+                    console.log(`[${i}] 📤 Changes pushed!\n`);
+                    once = true;
                 });
-                i++;
-
-                console.log(`[${i}] Changes (${result[0].numMatches}) pushed!\n`);
-            });
+            }
         });
     });
 });

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const
+    terminalLink = require('terminal-link');
     cyan     = '\x1b[36m',
     yellow   = '\x1b[33m',
     green    = '\x1b[32m',
@@ -8,6 +9,7 @@ const
     dim      = '\x1b[2m';
     bold     = '\x1b[1m';
     
+    console.log('\n')
     console.log('', dim);        
     console.log(`                        __                ___ __ __            `);      
     console.log(`                 .--.--|  |--.-----.----.'  _|  |__.-----.      `);
@@ -21,11 +23,15 @@ const
     console.log('', `   |___._|   __|   __|    |___  |_____|__|__|_____|__| |___._|____|_____|__|   `);
     console.log('', `         |__|  |__|       |_____|                                              `);
 
-    console.log('\n\n    Developer: Larsen Friis');
-    console.log('    Contact with any issues @ larsen.friis@uberflip.com');
+    console.log('\n\n')
+    const link = terminalLink('📁 View package documentation', 'https://www.npmjs.com/package/uf-app-generator');
+    console.log('   ' + link);
 
-    console.log('\n\n    This package can generate the Uberflip Marketplace app file structure and');
-    console.log('    seamlessly push local changes to your app during the app development process.');
+    console.log('\n\n   🔧 Developer: Larsen Friis');
+    console.log('   Contact with any issues @ larsen.friis@uberflip.com');
+
+    console.log('\n\n   This package can generate the Uberflip Marketplace app file structure and');
+    console.log('   seamlessly push local changes to your app during the app development process.');
 
     console.log('', dim);
     console.log(bold, '\nCommands:\n');
